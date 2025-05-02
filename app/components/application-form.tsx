@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import { useRouter } from "next/navigation";
 
 interface FormState {
   founderName: string;
@@ -17,7 +16,6 @@ interface FormState {
 }
 
 export function ApplicationForm() {
-  const router = useRouter();
   const [currentStep, setCurrentStep] = useState(1);
   const [formData, setFormData] = useState<FormState>({
     founderName: "",
