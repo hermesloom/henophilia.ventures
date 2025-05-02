@@ -15,30 +15,30 @@ export function Header({ showNavLinks = true }: HeaderProps) {
 
           {showNavLinks && (
             <nav className="hidden md:flex space-x-8 text-sm">
-              <a
+              <Link
                 href="/#model"
                 className="hover:text-neutral-500 transition-colors"
               >
                 Model
-              </a>
-              <a
+              </Link>
+              <Link
                 href="/#funding"
                 className="hover:text-neutral-500 transition-colors"
               >
                 Portfolio
-              </a>
-              <a
+              </Link>
+              <Link
                 href="/#founders"
                 className="hover:text-neutral-500 transition-colors"
               >
                 Founders
-              </a>
-              <a
+              </Link>
+              <Link
                 href="/#investors"
                 className="hover:text-neutral-500 transition-colors"
               >
                 Investors
-              </a>
+              </Link>
             </nav>
           )}
         </div>
