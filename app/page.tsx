@@ -1,5 +1,6 @@
 import { Header } from "./components/header";
 import { ContactForm } from "./components/contact-form";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -11,26 +12,25 @@ export default function Home() {
       <section className="py-24 md:py-32 px-6 md:px-12 border-b border-neutral-100">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-3xl md:text-5xl font-medium leading-tight mb-6">
-            Rebuilding Economic Infrastructure from First Principles
+            Economic Infrastructure, Rebuilt From First Principles
           </h1>
           <p className="text-lg md:text-xl text-neutral-700 max-w-3xl mb-12">
-            Henophilia Ventures funds and engineers interdependent startup
-            economies—designed to meet core needs, reduce systemic leakage, and
-            sustain cooperative ownership over time.
+            Henophilia engineers interconnected startup economies: designed for
+            core needs, minimal leakage, enduring cooperative governance.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <a
+            <Link
               href="#contact"
               className="inline-flex px-6 py-3 bg-neutral-800 text-white rounded-md text-sm font-medium transition-colors hover:bg-neutral-700"
             >
               Request Memo
-            </a>
-            <a
+            </Link>
+            <Link
               href="/apply"
               className="inline-flex px-6 py-3 border border-neutral-200 rounded-md text-sm font-medium transition-colors hover:bg-neutral-50"
             >
-              Founders: Apply to a Batch
-            </a>
+              Apply to Current Batch
+            </Link>
           </div>
         </div>
       </section>
@@ -42,23 +42,61 @@ export default function Home() {
       >
         <div className="max-w-4xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-medium mb-10">
-            Capital, Composed Differently
+            Capital, Structurally Reimagined
           </h2>
           <div className="prose max-w-none text-neutral-800">
             <p className="mb-4">
-              We approach venture funding as infrastructure design.
+              We approach venture funding as infrastructure architecture.
             </p>
             <p className="mb-4">
-              Each investment cycle is engineered as a self-reinforcing system:
-              multiple startups, composed into a functional unit. Together they
-              form a <strong>closed-loop economy</strong>, sharing legal
-              frameworks, internal trade, governance protocols, and regenerative
-              housing infrastructure.
+              Each investment cycle: a self-reinforcing system. Multiple
+              startups, composed into one functional unit, forming a{" "}
+              <strong>closed-loop economy</strong> with shared legal structures,
+              internal exchange, governance, and physical infrastructure.
             </p>
             <p>
-              By composing aligned ventures as interdependent structures, we
-              reduce volatility, increase mutual sufficiency, and unlock
-              long-term stability beyond extractive market dynamics.
+              Through interdependent composition, we achieve stability beyond
+              market volatility—sufficiency through mutual integration.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Technical Architecture */}
+      <section
+        className="py-20 px-6 md:px-12 border-b border-neutral-100"
+        id="technical"
+      >
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-2xl md:text-3xl font-medium mb-10">
+            System Architecture: Beyond Isolated Startups
+          </h2>
+          <div className="prose max-w-none text-neutral-800">
+            <p className="mb-4">
+              Our technical approach treats economic structures as composable
+              systems with explicit interfaces, dependencies, and feedback
+              loops.
+            </p>
+            <p className="mb-4">
+              Each venture: a microservice in a distributed architecture.
+              Protocols define inter-entity value exchange, governance
+              boundaries, and resource allocation. Legal structures function as
+              persistent state layers, ensuring system continuity despite node
+              replacement.
+            </p>
+            <p className="mb-4">
+              Current financial stacks introduce unnecessary complexity, leakage
+              vectors, and extraction points. Our implementation eliminates
+              these inefficiencies through direct peer contracts, Byzantine
+              fault-tolerant governance, and local sovereignty with global
+              interoperability.
+            </p>
+            <p>
+              Core innovation: treating ventures not as growth-optimized
+              entities, but as redundant, interdependent nodes in anti-fragile
+              infrastructure—each designed for replacement without system
+              failure, cooperatively owned, bounded in resource consumption, yet
+              unbounded in value production.
             </p>
           </div>
         </div>
@@ -71,7 +109,7 @@ export default function Home() {
       >
         <div className="max-w-4xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-medium mb-10">
-            From Isolated Startups to Economic Cohorts
+            From Isolated Ventures to Economic Cohorts
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
             <div>
@@ -79,25 +117,25 @@ export default function Home() {
                 Systemic Cohort Design
               </h3>
               <p className="text-neutral-700">
-                Each batch includes 5–10 startups whose value flows
-                interconnect—housing, legal structure, internal finance, care,
-                governance.
+                Each batch: 5–10 ventures with interconnected value flows.
+                Shared land and physical property, legal structure, finance,
+                care, and governance.
               </p>
             </div>
             <div>
               <h3 className="text-lg font-medium mb-3">
-                Integrated Ownership Logic
+                Structured Ownership Logic
               </h3>
               <p className="text-neutral-700">
-                We structure ventures using steward ownership, purpose trusts,
-                and cooperative control to retain mission continuity.
+                Steward ownership, purpose trusts, cooperative control.
+                Governance designed for intact mission continuity.
               </p>
             </div>
             <div>
               <h3 className="text-lg font-medium mb-3">Circular Value Flows</h3>
               <p className="text-neutral-700">
-                Cohorts develop shared currencies and mutual credit systems to
-                reduce reliance on external capital markets.
+                Internal currencies and mutual credit, minimizing external
+                capital dependency. Self-sustaining economic circuits.
               </p>
             </div>
           </div>
@@ -111,41 +149,40 @@ export default function Home() {
       >
         <div className="max-w-4xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-medium mb-10">
-            Venture-Scale Infrastructure for the Real Economy
+            Core Infrastructure for Real Economies
           </h2>
           <div className="grid md:grid-cols-2 gap-x-12 gap-y-8">
             <div>
               <h3 className="text-lg font-medium mb-2">Housing Systems</h3>
               <p className="text-neutral-700">
-                Modular dwellings, cooperative settlements, land stewardship
-                trusts
+                Modular dwellings. Cooperative settlements. Land trusts.
               </p>
             </div>
             <div>
               <h3 className="text-lg font-medium mb-2">Alternative Finance</h3>
               <p className="text-neutral-700">
-                Mutual credit, demurrage currencies, community capital tools
+                Mutual credit networks. Time-based currencies. Community
+                capital.
               </p>
             </div>
             <div>
               <h3 className="text-lg font-medium mb-2">Legal Infrastructure</h3>
               <p className="text-neutral-700">
-                Steward ownership contracts, trust law toolkits, collective
-                equity models
+                Steward ownership. Trust law protocols. Collective equity.
               </p>
             </div>
             <div>
               <h3 className="text-lg font-medium mb-2">Governance Protocols</h3>
               <p className="text-neutral-700">
-                Token-weighted voting, nested councils, constitutional
-                frameworks
+                Consent-based voting. Nested councils. Constitutional
+                structures.
               </p>
             </div>
             <div>
               <h3 className="text-lg font-medium mb-2">Care & Labor Systems</h3>
               <p className="text-neutral-700">
-                Cooperative caregiving, founder support ecosystems, circular
-                service networks
+                Cooperative caregiving. Mutual support networks. Circular
+                service.
               </p>
             </div>
           </div>
@@ -159,27 +196,25 @@ export default function Home() {
       >
         <div className="max-w-4xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-medium mb-10">
-            You're Not Building a Company—You're Building a System
+            Not Building Companies—Building Systems
           </h2>
           <div className="prose max-w-none text-neutral-800 mb-8">
             <p className="mb-4">
-              We work with founders who design ventures as structural
-              interventions—solving problems beneath the user interface, beneath
-              the product layer, beneath the business model.
+              We fund founders who design structural interventions. Below the
+              interface, below the product, below the business model.
             </p>
             <p>
-              If your work meets essential needs, enables others, or forms the
-              connective tissue of a regenerative economy, we want to fund
-              you—and embed you in a cohort where your venture becomes necessary
-              infrastructure.
+              If your venture meets essential needs, enables other ventures, or
+              forms connective tissue for a regenerative economy—join a cohort
+              where your work becomes vital infrastructure.
             </p>
           </div>
-          <a
+          <Link
             href="/apply"
             className="inline-flex px-6 py-3 border border-neutral-200 rounded-md text-sm font-medium transition-colors hover:bg-neutral-50"
           >
             Apply to a Cohort
-          </a>
+          </Link>
         </div>
       </section>
 
@@ -190,44 +225,38 @@ export default function Home() {
       >
         <div className="max-w-4xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-medium mb-10">
-            Designed for Patient Capital with Structural Intent
+            Capital with Structural Intent
           </h2>
           <div className="prose max-w-none text-neutral-800 mb-8">
-            <p className="mb-4">
-              Henophilia Ventures offers a uniquely structured investment
-              strategy:
-            </p>
+            <p className="mb-4">Our investment architecture:</p>
             <ul>
               <li>Purpose-aligned returns</li>
-              <li>Ecosystem equity</li>
-              <li>Revenue participation without exit dependency</li>
-              <li>
-                Legal containers that ensure value remains in service of mission
-              </li>
+              <li>Ecosystem equity holdings</li>
+              <li>Revenue participation without exit pressure</li>
+              <li>Legal structures preserving mission integrity</li>
             </ul>
             <p>
-              Our LPs support infrastructure, not speculation. We welcome
-              foundations, family offices, mission-driven funds, and catalytic
-              institutions.
+              Our LPs fund infrastructure, not speculation. For foundations,
+              family offices, mission-driven institutions, catalytic capital.
             </p>
           </div>
-          <a
+          <Link
             href="#contact"
             className="inline-flex px-6 py-3 border border-neutral-200 rounded-md text-sm font-medium transition-colors hover:bg-neutral-50"
           >
             Request Investment Materials
-          </a>
+          </Link>
         </div>
       </section>
 
       {/* Closing / Contact */}
       <section className="py-20 px-6 md:px-12" id="contact">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-medium mb-6">Contact Us</h2>
+          <h2 className="text-2xl md:text-3xl font-medium mb-6">Contact</h2>
           <div className="prose max-w-none text-neutral-800 mb-8">
             <p className="text-lg mb-6">
-              We build ventures that outlive their founders—because they're
-              composed for continuity, reciprocity, and care.
+              Ventures built to outlive their founders—composed for continuity,
+              reciprocity, care.
             </p>
           </div>
 

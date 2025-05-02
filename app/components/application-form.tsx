@@ -90,7 +90,7 @@ ${formData.founderName}
 
     // Encode the email subject and body for the mailto link
     const mailtoSubject = encodeURIComponent(
-      "Your Application to Henophilia Ventures"
+      `Cohort Application: ${formData.founderName} - ${formData.projectName} (${formData.infrastructureCategory})`
     );
     const mailtoBody = encodeURIComponent(emailBody);
 
