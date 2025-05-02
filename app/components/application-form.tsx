@@ -7,9 +7,10 @@ interface FormState {
   email: string;
   projectName: string;
   projectDescription: string;
-  systemicApproach: string;
   infrastructureCategory: string;
+  systemicApproach: string;
   developmentStage: string;
+  technicalApproach: string;
   teamComposition: string;
   fundingNeeds: string;
   alignment: string;
@@ -22,9 +23,10 @@ export function ApplicationForm() {
     email: "",
     projectName: "",
     projectDescription: "",
-    systemicApproach: "",
     infrastructureCategory: "",
+    systemicApproach: "",
     developmentStage: "",
+    technicalApproach: "",
     teamComposition: "",
     fundingNeeds: "",
     alignment: "",
@@ -151,8 +153,7 @@ ${formData.founderName}
           <div className="space-y-6">
             <h3 className="text-xl font-medium">Project Overview</h3>
             <p className="text-neutral-600 mb-6">
-              Describe your venture and how it functions as infrastructure
-              rather than just a product.
+              Tell us about your venture and how it functions as infrastructure.
             </p>
 
             <div className="space-y-4">
@@ -173,58 +174,6 @@ ${formData.founderName}
                 />
               </div>
 
-              <div>
-                <label
-                  htmlFor="projectDescription"
-                  className="block text-sm font-medium mb-1"
-                >
-                  Description (200 words max)
-                </label>
-                <textarea
-                  id="projectDescription"
-                  value={formData.projectDescription}
-                  onChange={(e) =>
-                    updateField("projectDescription", e.target.value)
-                  }
-                  rows={5}
-                  className="w-full p-3 border border-neutral-200 rounded-md focus:ring-1 focus:ring-neutral-500 focus:border-neutral-500"
-                  required
-                />
-              </div>
-
-              <div>
-                <label
-                  htmlFor="systemicApproach"
-                  className="block text-sm font-medium mb-1"
-                >
-                  How does your venture function as infrastructure rather than
-                  just a product?
-                </label>
-                <textarea
-                  id="systemicApproach"
-                  value={formData.systemicApproach}
-                  onChange={(e) =>
-                    updateField("systemicApproach", e.target.value)
-                  }
-                  rows={4}
-                  className="w-full p-3 border border-neutral-200 rounded-md focus:ring-1 focus:ring-neutral-500 focus:border-neutral-500"
-                  required
-                />
-              </div>
-            </div>
-          </div>
-        );
-
-      case 3:
-        return (
-          <div className="space-y-6">
-            <h3 className="text-xl font-medium">Category & Development</h3>
-            <p className="text-neutral-600 mb-6">
-              Help us understand which infrastructure category you're addressing
-              and your current stage.
-            </p>
-
-            <div className="space-y-4">
               <div>
                 <label
                   htmlFor="infrastructureCategory"
@@ -333,6 +282,72 @@ ${formData.founderName}
 
               <div>
                 <label
+                  htmlFor="projectDescription"
+                  className="block text-sm font-medium mb-1"
+                >
+                  Project Description
+                </label>
+                <textarea
+                  id="projectDescription"
+                  rows={4}
+                  value={formData.projectDescription}
+                  onChange={(e) =>
+                    updateField("projectDescription", e.target.value)
+                  }
+                  className="w-full p-3 border border-neutral-200 rounded-md focus:ring-1 focus:ring-neutral-500 focus:border-neutral-500"
+                  required
+                />
+              </div>
+            </div>
+          </div>
+        );
+
+      case 3:
+        return (
+          <div className="space-y-6">
+            <h3 className="text-xl font-medium">Systemic Approach</h3>
+            <p className="text-neutral-600 mb-6">
+              Describe how your venture functions as part of a regenerative
+              economic system.
+            </p>
+
+            <div className="space-y-4">
+              <div>
+                <label
+                  htmlFor="systemicApproach"
+                  className="block text-sm font-medium mb-1"
+                >
+                  How does your venture function as infrastructure rather than
+                  just a product or service?
+                </label>
+                <textarea
+                  id="systemicApproach"
+                  rows={5}
+                  value={formData.systemicApproach}
+                  onChange={(e) =>
+                    updateField("systemicApproach", e.target.value)
+                  }
+                  className="w-full p-3 border border-neutral-200 rounded-md focus:ring-1 focus:ring-neutral-500 focus:border-neutral-500"
+                  required
+                />
+              </div>
+            </div>
+          </div>
+        );
+
+      case 4:
+        return (
+          <div className="space-y-6">
+            <h3 className="text-xl font-medium">
+              Development & Implementation
+            </h3>
+            <p className="text-neutral-600 mb-6">
+              Tell us about your development stage and technical approach.
+            </p>
+
+            <div className="space-y-4">
+              <div>
+                <label
                   htmlFor="developmentStage"
                   className="block text-sm font-medium mb-1"
                 >
@@ -357,19 +372,40 @@ ${formData.founderName}
                   </option>
                 </select>
               </div>
+
+              <div>
+                <label
+                  htmlFor="technicalApproach"
+                  className="block text-sm font-medium mb-1"
+                >
+                  How does your venture interface with other economic systems
+                  and infrastructure?
+                </label>
+                <textarea
+                  id="technicalApproach"
+                  rows={4}
+                  value={formData.technicalApproach}
+                  onChange={(e) =>
+                    updateField("technicalApproach", e.target.value)
+                  }
+                  className="w-full p-3 border border-neutral-200 rounded-md focus:ring-1 focus:ring-neutral-500 focus:border-neutral-500"
+                  required
+                />
+              </div>
             </div>
           </div>
         );
 
-      case 4:
+      case 5:
         return (
           <div className="space-y-6">
-            <h3 className="text-xl font-medium">Team & Resources</h3>
+            <h3 className="text-xl font-medium">Team & Alignment</h3>
             <p className="text-neutral-600 mb-6">
-              Tell us about your team structure and resource requirements.
+              Tell us about your team structure and how your venture aligns with
+              our approach.
             </p>
 
-            <div className="space-y-4">
+            <div className="space-y-5">
               <div>
                 <label
                   htmlFor="teamComposition"
@@ -407,33 +443,20 @@ ${formData.founderName}
                   required
                 />
               </div>
-            </div>
-          </div>
-        );
 
-      case 5:
-        return (
-          <div className="space-y-6">
-            <h3 className="text-xl font-medium">Alignment with Henophilia</h3>
-            <p className="text-neutral-600 mb-6">
-              Explain how your venture aligns with our interdependent economic
-              approach and could benefit from being part of a cohort.
-            </p>
-
-            <div className="space-y-4">
               <div>
                 <label
                   htmlFor="alignment"
                   className="block text-sm font-medium mb-1"
                 >
-                  Alignment & Cohort Potential
+                  Alignment with Henophilia's Approach
                 </label>
                 <textarea
                   id="alignment"
                   value={formData.alignment}
                   onChange={(e) => updateField("alignment", e.target.value)}
-                  placeholder="How does your venture align with Henophilia's approach to building interdependent economic systems? How could it benefit from and contribute to a cohort?"
-                  rows={6}
+                  placeholder="How does your venture align with Henophilia's model of building interdependent economic systems? How might it contribute to and benefit from a cohort?"
+                  rows={4}
                   className="w-full p-3 border border-neutral-200 rounded-md focus:ring-1 focus:ring-neutral-500 focus:border-neutral-500"
                   required
                 />
