@@ -15,7 +15,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Henophilia Ventures | Rebuilding Economic Infrastructure",
+  title:
+    "Henophilia Ventures | Economic Infrastructure, Rebuilt From First Principles",
   description:
     "Funding and engineering interdependent startup economies designed to meet core needs, reduce systemic leakage, and sustain cooperative ownership over time.",
 };

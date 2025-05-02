@@ -138,4 +138,4 @@ info@henophilia.ventures
 
 ---
 
-© 2025 Henophilia Ventures - Rebuilding economic infrastructure from first principles
+© 2025 Henophilia Ventures - Economic Infrastructure, Rebuilt From First Principles

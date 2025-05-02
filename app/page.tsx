@@ -52,7 +52,8 @@ export default function Home() {
               Each investment cycle: a self-reinforcing system. Multiple
               startups, composed into one functional unit, forming a{" "}
               <strong>closed-loop economy</strong> with shared legal structures,
-              internal exchange, governance, and physical infrastructure.
+              internal exchange, governance, human care, and physical
+              infrastructure.
             </p>
             <p>
               Through interdependent composition, we achieve stability beyond
@@ -118,8 +119,8 @@ export default function Home() {
               </h3>
               <p className="text-neutral-700">
                 Each batch: 5–10 ventures with interconnected value flows.
-                Shared land and physical property, legal structure, finance,
-                care, and governance.
+                Shared land and other physical property, legal structure,
+                finance, care, and governance.
               </p>
             </div>
             <div>
@@ -272,7 +273,7 @@ export default function Home() {
               © 2025 Henophilia Ventures
             </div>
             <div className="text-sm text-neutral-500">
-              Rebuilding economic infrastructure from first principles
+              Economic Infrastructure, Rebuilt From First Principles
             </div>
           </div>
         </div>
