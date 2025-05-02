@@ -1,5 +1,6 @@
 import { ApplicationForm } from "../components/application-form";
 import { Header } from "../components/header";
+import Link from "next/link";
 
 export const metadata = {
   title: "Apply to Henophilia Ventures | Founder Application",
@@ -38,9 +39,9 @@ export default function ApplyPage() {
               © 2025 Henophilia Ventures
             </div>
             <div className="text-sm text-neutral-500">
-              <a href="/" className="hover:underline">
+              <Link href="/" className="hover:underline">
                 Return to Main Site
-              </a>
+              </Link>
             </div>
           </div>
         </div>
