@@ -1,102 +1,253 @@
 import Image from "next/image";
+import { Header } from "./components/header";
+import { ContactForm } from "./components/contact-form";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <div className="flex flex-col min-h-screen font-[family-name:var(--font-geist-sans)]">
+      {/* Header/Navigation */}
+      <Header />
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
+      {/* Hero Section */}
+      <section className="py-24 md:py-32 px-6 md:px-12 border-b border-neutral-100">
+        <div className="max-w-4xl mx-auto">
+          <h1 className="text-3xl md:text-5xl font-medium leading-tight mb-6">
+            Rebuilding Economic Infrastructure from First Principles
+          </h1>
+          <p className="text-lg md:text-xl text-neutral-700 max-w-3xl mb-12">
+            Henophilia Ventures funds and engineers interdependent startup
+            economies—designed to meet core needs, reduce systemic leakage, and
+            sustain cooperative ownership over time.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4">
+            <a
+              href="#contact"
+              className="inline-flex px-6 py-3 bg-neutral-800 text-white rounded-md text-sm font-medium transition-colors hover:bg-neutral-700"
+            >
+              Request Memo
+            </a>
+            <a
+              href="/apply"
+              className="inline-flex px-6 py-3 border border-neutral-200 rounded-md text-sm font-medium transition-colors hover:bg-neutral-50"
+            >
+              Founders: Apply to a Batch
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Introduction */}
+      <section
+        className="py-20 px-6 md:px-12 border-b border-neutral-100"
+        id="intro"
+      >
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-2xl md:text-3xl font-medium mb-10">
+            Capital, Composed Differently
+          </h2>
+          <div className="prose max-w-none text-neutral-800">
+            <p className="mb-4">
+              We approach venture funding as infrastructure design.
+            </p>
+            <p className="mb-4">
+              Each investment cycle is engineered as a self-reinforcing system:
+              multiple startups, composed into a functional unit. Together they
+              form a <strong>closed-loop economy</strong>, sharing legal
+              frameworks, internal trade, governance protocols, and regenerative
+              housing infrastructure.
+            </p>
+            <p>
+              By composing aligned ventures as interdependent structures, we
+              reduce volatility, increase mutual sufficiency, and unlock
+              long-term stability beyond extractive market dynamics.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Our Model */}
+      <section
+        className="py-20 px-6 md:px-12 border-b border-neutral-100"
+        id="model"
+      >
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-2xl md:text-3xl font-medium mb-10">
+            From Isolated Startups to Economic Cohorts
+          </h2>
+          <div className="grid md:grid-cols-3 gap-8">
+            <div>
+              <h3 className="text-lg font-medium mb-3">
+                Systemic Cohort Design
+              </h3>
+              <p className="text-neutral-700">
+                Each batch includes 5–10 startups whose value flows
+                interconnect—housing, legal structure, internal finance, care,
+                governance.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-lg font-medium mb-3">
+                Integrated Ownership Logic
+              </h3>
+              <p className="text-neutral-700">
+                We structure ventures using steward ownership, purpose trusts,
+                and cooperative control to retain mission continuity.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-lg font-medium mb-3">Circular Value Flows</h3>
+              <p className="text-neutral-700">
+                Cohorts develop shared currencies and mutual credit systems to
+                reduce reliance on external capital markets.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* What We Fund */}
+      <section
+        className="py-20 px-6 md:px-12 border-b border-neutral-100"
+        id="funding"
+      >
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-2xl md:text-3xl font-medium mb-10">
+            Venture-Scale Infrastructure for the Real Economy
+          </h2>
+          <div className="grid md:grid-cols-2 gap-x-12 gap-y-8">
+            <div>
+              <h3 className="text-lg font-medium mb-2">Housing Systems</h3>
+              <p className="text-neutral-700">
+                Modular dwellings, cooperative settlements, land stewardship
+                trusts
+              </p>
+            </div>
+            <div>
+              <h3 className="text-lg font-medium mb-2">Alternative Finance</h3>
+              <p className="text-neutral-700">
+                Mutual credit, demurrage currencies, community capital tools
+              </p>
+            </div>
+            <div>
+              <h3 className="text-lg font-medium mb-2">Legal Infrastructure</h3>
+              <p className="text-neutral-700">
+                Steward ownership contracts, trust law toolkits, collective
+                equity models
+              </p>
+            </div>
+            <div>
+              <h3 className="text-lg font-medium mb-2">Governance Protocols</h3>
+              <p className="text-neutral-700">
+                Token-weighted voting, nested councils, constitutional
+                frameworks
+              </p>
+            </div>
+            <div>
+              <h3 className="text-lg font-medium mb-2">Care & Labor Systems</h3>
+              <p className="text-neutral-700">
+                Cooperative caregiving, founder support ecosystems, circular
+                service networks
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* For Founders */}
+      <section
+        className="py-20 px-6 md:px-12 border-b border-neutral-100"
+        id="founders"
+      >
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-2xl md:text-3xl font-medium mb-10">
+            You're Not Building a Company—You're Building a System
+          </h2>
+          <div className="prose max-w-none text-neutral-800 mb-8">
+            <p className="mb-4">
+              We work with founders who design ventures as structural
+              interventions—solving problems beneath the user interface, beneath
+              the product layer, beneath the business model.
+            </p>
+            <p>
+              If your work meets essential needs, enables others, or forms the
+              connective tissue of a regenerative economy, we want to fund
+              you—and embed you in a cohort where your venture becomes necessary
+              infrastructure.
+            </p>
+          </div>
           <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/apply"
+            className="inline-flex px-6 py-3 border border-neutral-200 rounded-md text-sm font-medium transition-colors hover:bg-neutral-50"
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
+            Apply to a Cohort
           </a>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+      </section>
+
+      {/* For LPs & Institutions */}
+      <section
+        className="py-20 px-6 md:px-12 border-b border-neutral-100"
+        id="investors"
+      >
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-2xl md:text-3xl font-medium mb-10">
+            Designed for Patient Capital with Structural Intent
+          </h2>
+          <div className="prose max-w-none text-neutral-800 mb-8">
+            <p className="mb-4">
+              Henophilia Ventures offers a uniquely structured investment
+              strategy:
+            </p>
+            <ul>
+              <li>Purpose-aligned returns</li>
+              <li>Ecosystem equity</li>
+              <li>Revenue participation without exit dependency</li>
+              <li>
+                Legal containers that ensure value remains in service of mission
+              </li>
+            </ul>
+            <p>
+              Our LPs support infrastructure, not speculation. We welcome
+              foundations, family offices, mission-driven funds, and catalytic
+              institutions.
+            </p>
+          </div>
+          <a
+            href="#contact"
+            className="inline-flex px-6 py-3 border border-neutral-200 rounded-md text-sm font-medium transition-colors hover:bg-neutral-50"
+          >
+            Request Investment Materials
+          </a>
+        </div>
+      </section>
+
+      {/* Closing / Contact */}
+      <section className="py-20 px-6 md:px-12" id="contact">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-2xl md:text-3xl font-medium mb-6">Contact Us</h2>
+          <div className="prose max-w-none text-neutral-800 mb-8">
+            <p className="text-lg mb-6">
+              We build ventures that outlive their founders—because they're
+              composed for continuity, reciprocity, and care.
+            </p>
+          </div>
+
+          <ContactForm />
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="py-8 px-6 md:px-12 border-t border-neutral-100 mt-auto">
+        <div className="max-w-4xl mx-auto">
+          <div className="flex justify-between items-center">
+            <div className="text-sm text-neutral-500">
+              © 2025 Henophilia Ventures
+            </div>
+            <div className="text-sm text-neutral-500">
+              Rebuilding economic infrastructure from first principles
+            </div>
+          </div>
+        </div>
       </footer>
     </div>
   );
