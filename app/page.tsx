@@ -187,6 +187,27 @@ export default function Home() {
                 service.
               </p>
             </div>
+            <div>
+              <h3 className="text-lg font-medium mb-2">Land Stewardship</h3>
+              <p className="text-neutral-700">
+                Regenerative agriculture. Commons management. Ecological
+                restoration.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-lg font-medium mb-2">Knowledge Commons</h3>
+              <p className="text-neutral-700">
+                Learning ecosystems. Wisdom transfer. Intergenerational
+                practice.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-lg font-medium mb-2">Celebration Systems</h3>
+              <p className="text-neutral-700">
+                Ritual design. Art platforms. Play infrastructure.
+                Meaning-making.
+              </p>
+            </div>
           </div>
         </div>
       </section>

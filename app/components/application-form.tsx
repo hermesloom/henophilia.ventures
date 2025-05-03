@@ -263,10 +263,10 @@ ${formData.founderName}
                   </optgroup>
 
                   <optgroup label="Knowledge & Learning">
+                    <option value="Knowledge Commons">Knowledge Commons</option>
                     <option value="Learning Ecosystems">
                       Learning Ecosystems
                     </option>
-                    <option value="Knowledge Commons">Knowledge Commons</option>
                     <option value="Wisdom Transfer">Wisdom Transfer</option>
                     <option value="Intergenerational Practice">
                       Intergenerational Practice
