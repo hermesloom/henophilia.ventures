@@ -1,5 +1,6 @@
 import { ApplicationForm } from "../components/application-form";
 import { Header } from "../components/header";
+import { Footer } from "../components/footer";
 import Link from "next/link";
 
 export const metadata = {
@@ -32,20 +33,7 @@ export default function ApplyPage() {
       </main>
 
       {/* Footer */}
-      <footer className="py-8 px-6 md:px-12 border-t border-neutral-100 mt-auto">
-        <div className="max-w-4xl mx-auto">
-          <div className="flex justify-between items-center">
-            <div className="text-sm text-neutral-500">
-              © 2025 Henophilia Ventures
-            </div>
-            <div className="text-sm text-neutral-500">
-              <Link href="/" className="hover:underline">
-                Return to Main Site
-              </Link>
-            </div>
-          </div>
-        </div>
-      </footer>
+      <Footer showHomeLink={true} />
     </div>
   );
 }

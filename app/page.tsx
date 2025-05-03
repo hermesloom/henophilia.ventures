@@ -1,4 +1,5 @@
 import { Header } from "./components/header";
+import { Footer } from "./components/footer";
 import { ContactForm } from "./components/contact-form";
 import Link from "next/link";
 
@@ -266,18 +267,7 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="py-8 px-6 md:px-12 border-t border-neutral-100 mt-auto">
-        <div className="max-w-4xl mx-auto">
-          <div className="flex justify-between items-center">
-            <div className="text-sm text-neutral-500">
-              © 2025 Henophilia Ventures
-            </div>
-            <div className="text-sm text-neutral-500">
-              Economic Infrastructure, Rebuilt From First Principles
-            </div>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }
