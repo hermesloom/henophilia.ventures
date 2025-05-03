@@ -104,6 +104,59 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Simple Explanation */}
+      <section
+        className="py-20 px-6 md:px-12 border-b border-neutral-100 bg-neutral-50"
+        id="simple"
+      >
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-2xl md:text-3xl font-medium mb-10">
+            A Neighborhood, Not Just Houses
+          </h2>
+          <div className="prose max-w-none text-neutral-800">
+            <p className="mb-4">
+              Imagine a neighborhood where one family grows food, another builds
+              homes, another provides healthcare, and another teaches the
+              children.
+            </p>
+            <p className="mb-4">
+              Each family does what they're good at. They all support each
+              other. The food growers get homes. The builders get food. The
+              teachers get healthcare. Everyone gets what they need.
+            </p>
+            <p className="mb-4">
+              That's how we build companies - as groups that help each other.
+              Instead of ten separate businesses trying to survive alone, we
+              connect them so they work together.
+            </p>
+            <p className="mb-4">
+              The baker makes bread for the bike shop. The bike shop fixes bikes
+              for the carpenter. The carpenter builds furniture for the baker.
+              Money stays inside this circle instead of leaking out.
+            </p>
+            <p className="mb-4">
+              We use special rules to make sure these helpful connections don't
+              break. Even if one person leaves, the neighborhood keeps working
+              together. Like a garden that grows back every year, even if some
+              plants don't return.
+            </p>
+            <p className="mb-4">
+              This isn't just a nice idea—it's economic engineering. When
+              ventures directly meet each other's needs, they become resilient
+              to market fluctuations. In traditional models, each company stands
+              alone against market forces; in our model, they stand together.
+            </p>
+            <p>
+              By designing these interdependencies from the beginning, we're not
+              just funding companies—we're building local economies that work
+              even when the larger economy doesn't. Infrastructure that serves
+              people first, profit second. Systems designed to last generations,
+              not quarters.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Our Model */}
       <section
         className="py-20 px-6 md:px-12 border-b border-neutral-100"
@@ -163,8 +216,7 @@ export default function Home() {
             <div>
               <h3 className="text-lg font-medium mb-2">Alternative Finance</h3>
               <p className="text-neutral-700">
-                Mutual credit networks. Time-based currencies. Community
-                capital.
+                Mutual credit networks. Freiwirtschaft. Community capital.
               </p>
             </div>
             <div>
